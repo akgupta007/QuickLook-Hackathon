@@ -108,7 +108,7 @@ jQuery.extend({
                     highlight.appendChild(wordClone);
                     highlight.appendChild(tooltipWrap);
                     highlight.addEventListener('mouseover', function () {
-                        var tooltip = document.getElementById('tooltiptext'+text);
+                        var tooltip = tooltipWrap;
                         
                         var highlightText = document.getElementById('highlight'+text)
                         var rect = highlightText.getBoundingClientRect();
@@ -120,7 +120,7 @@ jQuery.extend({
                         
                     });
                     highlight.addEventListener('mouseout', function () {
-                    var tooltip = document.getElementById('tooltiptext'+text);
+                    var tooltip = tooltipWrap;
                     tooltip.setAttribute('style', 'visibility: hidden !important');  
                     });
                     wordNode.parentNode.replaceChild(highlight, wordNode);
@@ -131,7 +131,7 @@ jQuery.extend({
             });
 
         } else if ((node.nodeType === 1 && node.childNodes) && // only element nodes that have children
-                !/(script|style)/i.test(node.tagName)) { // skip if already highlighted
+                !/(script|style)/i.test(node.tagName) && !(node.className === 'highlight')) { // skip if already highlighted
             for (var i = 0; i < node.childNodes.length; i++) {
                 jQuery.highlight(node.childNodes[i], className);
             }

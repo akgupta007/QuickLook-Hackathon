@@ -24,5 +24,9 @@
       "js": ["jquery/jquery.js", "jquery/jquery.highlight.js", "lib.js"],
       "css": ["highlight.css", "jquery/tooltip.css"]
     }
-  ]
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
