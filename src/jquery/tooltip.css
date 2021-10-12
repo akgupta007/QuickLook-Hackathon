@@ -1,0 +1,48 @@
+.tooltiptext {
+  visibility: hidden;
+  left: auto;
+  width: max-content;
+  height: auto;
+  background-color: #e5e5e5;
+  border-color: #e1e1e1;
+  border-width: 2px;
+  color: black;
+  text-align: left;
+  border-radius: 2px;
+  padding: 5px 0;
+  text-indent: 0pt;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.sectionseparator {
+  width: 1px;
+  color: #e1e1e1;
+}
+.itemheading {
+  color: #2d6dc9;
+  margin-left: 4px;
+  text-align: left;
+}
+
+.itemdescription {
+  text-align: left;
+  margin-left: 4px;
+  margin-bottom: 8px;
+  margin-right: 4px;
+}
+
+.tooltiptext-active {
+  visibility: visible;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}

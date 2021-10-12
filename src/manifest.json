@@ -2,7 +2,7 @@
   "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 2,
-  "name": "Multi Highlight",
+  "name": "Quick Look",
   "version": "2.4",
   "description": "Efficiently mark multiple words in a page.",
   "browser_action": {
@@ -22,7 +22,7 @@
     {
       "matches": ["<all_urls>"],
       "js": ["jquery/jquery.js", "jquery/jquery.highlight.js", "lib.js"],
-      "css": ["highlight.css"]
+      "css": ["highlight.css", "jquery/tooltip.css"]
     }
   ]
 }
